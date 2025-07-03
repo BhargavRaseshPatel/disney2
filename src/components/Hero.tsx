@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Card, CardContent } from "./ui/card"
+import { Card } from "./ui/card"
 import {
     Carousel,
     CarouselContent,
@@ -18,9 +18,6 @@ const Hero = () => {
                         <CarouselItem key={index}>
                             <div className="p-1">
                                 <Card className="w-full">
-                                    {/* <CardContent className="flex aspect-square items-center justify-center p-6">
-                                        <span className="text-4xl font-semibold">{index + 1}</span>
-                                    </CardContent> */}
                                     <img src={_.imageURL} alt=""/>
                                 </Card>
                             </div>

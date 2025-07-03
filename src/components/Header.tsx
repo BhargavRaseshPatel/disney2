@@ -8,11 +8,10 @@ const Header = () => {
             <div className='flex'>
                 <img src={logo} className='w-[80px] md:w-[120px] object-cover mr-3' />
 
-                <div className='flex gap-5 items-center'>
-                    <h3 className='text-lg text-white'>Movies</h3>
-                    <h3 className='text-lg text-white'>TV Shows</h3>
-                    <h3 className='text-lg text-white'>Servies</h3>
-                    <h3 className="text-lg text-white">Cartoon</h3>
+                <div className='flex gap-5 items-center px-5'>
+                    <a href="#movies"><h3 className='text-lg text-white'>Movies</h3></a>
+                    <a href="#series"><h3 className='text-lg text-white'>Series</h3></a>
+                    <a href="#cartoon"><h3 className="text-lg text-white">Cartoon</h3></a>
                 </div>
             </div>
             <div className=' flex items-center gap-5 px-2'>

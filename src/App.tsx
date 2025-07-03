@@ -4,14 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header.tsx'
 import Hero from './components/Hero.tsx'
+import CategorySection from './components/CategorySection.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Header />
       <Hero />
+      <CategorySection />
     </>
   )
 }
