@@ -5,6 +5,8 @@ import './App.css'
 import Header from './components/Header.tsx'
 import Hero from './components/Hero.tsx'
 import CategorySection from './components/CategorySection.tsx'
+import AppDownload from './components/AppDownload.tsx'
+import Footer from './components/Footer.tsx'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
       <Header />
       <Hero />
       <CategorySection />
+      <AppDownload />
+      <Footer />
     </>
   )
 }
