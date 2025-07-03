@@ -12,6 +12,7 @@ const Header = () => {
                     <h3 className='text-lg text-white'>Movies</h3>
                     <h3 className='text-lg text-white'>TV Shows</h3>
                     <h3 className='text-lg text-white'>Servies</h3>
+                    <h3 className="text-lg text-white">Cartoon</h3>
                 </div>
             </div>
             <div className=' flex items-center gap-5 px-2'>

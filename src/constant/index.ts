@@ -14,7 +14,4 @@ export const carouselImages = [
     {
         imageURL : "/assets/images/carousel5.webp"
     },
-    {
-        imageURL : "/assets/images/carousel6.webp"
-    },
 ]

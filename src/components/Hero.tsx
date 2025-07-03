@@ -12,12 +12,12 @@ import { carouselImages } from "@/constant"
 const Hero = () => {
     return (
         <div className="flex justify-center mt-5">
-            <Carousel className="w-full max-w-xs">
-                <CarouselContent className="">
+            <Carousel className="w-full max-w-5xl">
+                <CarouselContent className="w-full">
                     {carouselImages.map((_, index) => (
                         <CarouselItem key={index}>
                             <div className="p-1">
-                                <Card>
+                                <Card className="w-full">
                                     {/* <CardContent className="flex aspect-square items-center justify-center p-6">
                                         <span className="text-4xl font-semibold">{index + 1}</span>
                                     </CardContent> */}
@@ -31,7 +31,7 @@ const Hero = () => {
                 <CarouselNext />
             </Carousel>
 
-            <img src={'/assets/images/carousel2.webp'} alt="image"/>
+            {/* <img src={'/assets/images/carousel2.webp'} alt="image"/> */}
         </div>
     )
 }
