@@ -1,67 +1,327 @@
-export const carouselImages = [
-    {
-        imageURL : "/assets/images/carousel1.webp"
-    },
-    {
-        imageURL : "/assets/images/carousel2.webp"
-    },
-    {
-        imageURL : "/assets/images/carousel3.webp"
-    },
-    {
-        imageURL : "/assets/images/carousel4.webp"
-    },
-    {
-        imageURL : "/assets/images/carousel5.webp"
-    },
-]
+export const allImages = [
+  // 🌀 Carousel Images
+  { 
+    id: 1, 
+    category: 'carousel', 
+    imageURL: "/assets/images/carousel1.webp",
+    title: "Frozen Kingdom",
+    description: "Join Elsa and Anna on their magical adventure through the enchanted ice kingdom.",
+    year: 2023,
+    duration: "108 min",
+    genre: ["Animation", "Family", "Adventure"],
+    rating: 8.5,
+    director: "Chris Buck",
+    cast: ["Kristen Bell", "Idina Menzel", "Josh Gad"],
+    synopsis: "When ancient magic threatens the kingdom, Elsa must journey beyond Arendelle to discover the truth about her powers and save her people from an eternal winter."
+  },
+  { 
+    id: 2, 
+    category: 'carousel', 
+    imageURL: "/assets/images/carousel2.webp",
+    title: "Magical Adventures",
+    description: "Embark on a journey filled with wonder, friendship, and magical discoveries.",
+    year: 2023,
+    duration: "95 min",
+    genre: ["Animation", "Family", "Fantasy"],
+    rating: 8.2,
+    director: "Jennifer Lee",
+    cast: ["Emma Stone", "Ryan Reynolds", "Tom Hanks"],
+    synopsis: "A young girl discovers a hidden world of magic and must learn to harness her newfound powers to protect both her world and the magical realm."
+  },
+  { 
+    id: 3, 
+    category: 'carousel', 
+    imageURL: "/assets/images/carousel3.webp",
+    title: "Ocean's Heart",
+    description: "Dive deep into the mysteries of the ocean with brave explorers and sea creatures.",
+    year: 2023,
+    duration: "112 min",
+    genre: ["Animation", "Adventure", "Family"],
+    rating: 8.7,
+    director: "Ron Clements",
+    cast: ["Zendaya", "Dwayne Johnson", "Lin-Manuel Miranda"],
+    synopsis: "A fearless ocean explorer teams up with mystical sea creatures to restore balance to the underwater world and save the seas from an ancient curse."
+  },
+  { 
+    id: 4, 
+    category: 'carousel', 
+    imageURL: "/assets/images/carousel4.webp",
+    title: "Starlight Dreams",
+    description: "Follow the stars and make wishes come true in this heartwarming tale.",
+    year: 2023,
+    duration: "101 min",
+    genre: ["Animation", "Family", "Musical"],
+    rating: 8.4,
+    director: "Byron Howard",
+    cast: ["Ariana Grande", "Chris Evans", "Lupita Nyong'o"],
+    synopsis: "A young dreamer discovers that shooting stars are actually magical beings who grant wishes, and she must help them save their celestial home."
+  },
+  { 
+    id: 5, 
+    category: 'carousel', 
+    imageURL: "/assets/images/carousel5.webp",
+    title: "Enchanted Forest",
+    description: "Explore the wonders of an enchanted forest where every tree tells a story.",
+    year: 2023,
+    duration: "98 min",
+    genre: ["Animation", "Family", "Adventure"],
+    rating: 8.3,
+    director: "Rich Moore",
+    cast: ["Amy Adams", "Patrick Dempsey", "James Marsden"],
+    synopsis: "When a modern girl stumbles into an enchanted forest, she must work with woodland creatures to break an ancient spell and find her way home."
+  },
 
-export const cartoonImages = [
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/d13Uj86LdbDLrfDoHR5aDOFYyJC.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/ilFLHU1OxUS1YDvUMCr8K3hW28r.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
-    },
-]
+  // 🧸 Cartoon Images
+  { 
+    id: 6, 
+    category: 'cartoon', 
+    imageURL: "https://image.tmdb.org/t/p/original/d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg",
+    title: "Toy Story Adventures",
+    description: "Join Woody, Buzz, and the gang for more incredible adventures in Andy's room.",
+    year: 2022,
+    duration: "96 min",
+    genre: ["Animation", "Family", "Comedy"],
+    rating: 8.8,
+    director: "Josh Cooley",
+    cast: ["Tom Hanks", "Tim Allen", "Annie Potts"],
+    synopsis: "When a new toy arrives, Woody and Buzz must work together to help their friend adjust to life in Andy's room while facing their biggest adventure yet."
+  },
+  { 
+    id: 7, 
+    category: 'cartoon', 
+    imageURL: "https://image.tmdb.org/t/p/original/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg",
+    title: "Monster University",
+    description: "Follow Mike and Sulley through their college years at Monster University.",
+    year: 2021,
+    duration: "104 min",
+    genre: ["Animation", "Family", "Comedy"],
+    rating: 8.1,
+    director: "Dan Scanlon",
+    cast: ["Billy Crystal", "John Goodman", "Helen Mirren"],
+    synopsis: "Before they were the best of friends, Mike and Sulley were rivals at Monster University, learning that sometimes the best teams come from the most unlikely partnerships."
+  },
+  { 
+    id: 8, 
+    category: 'cartoon', 
+    imageURL: "https://image.tmdb.org/t/p/original/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg",
+    title: "Finding Nemo's Journey",
+    description: "Swim along with Nemo as he explores the vast ocean and learns about friendship.",
+    year: 2022,
+    duration: "100 min",
+    genre: ["Animation", "Family", "Adventure"],
+    rating: 8.9,
+    director: "Andrew Stanton",
+    cast: ["Albert Brooks", "Ellen DeGeneres", "Alexander Gould"],
+    synopsis: "When Nemo ventures too far from home, he must navigate the dangers of the ocean while his father Marlin embarks on an epic journey to find him."
+  },
+  { 
+    id: 9, 
+    category: 'cartoon', 
+    imageURL: "https://image.tmdb.org/t/p/original/d13Uj86LdbDLrfDoHR5aDOFYyJC.jpg",
+    title: "The Incredibles Family",
+    description: "Watch the superhero family save the world while dealing with everyday challenges.",
+    year: 2023,
+    duration: "115 min",
+    genre: ["Animation", "Action", "Family"],
+    rating: 8.6,
+    director: "Brad Bird",
+    cast: ["Craig T. Nelson", "Holly Hunter", "Sarah Vowell"],
+    synopsis: "The Parr family must balance their superhero duties with normal family life when a new villain threatens the city and their secret identities."
+  },
+  { 
+    id: 10, 
+    category: 'cartoon', 
+    imageURL: "https://image.tmdb.org/t/p/original/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+    title: "Cars Racing Championship",
+    description: "Join Lightning McQueen in the ultimate racing championship adventure.",
+    year: 2022,
+    duration: "117 min",
+    genre: ["Animation", "Family", "Sports"],
+    rating: 7.8,
+    director: "Kevin Reher",
+    cast: ["Owen Wilson", "Chris Cooper", "Cristela Alonzo"],
+    synopsis: "Lightning McQueen faces his toughest competition yet as he trains with a new generation of high-tech racers while learning that winning isn't everything."
+  },
+  { 
+    id: 11, 
+    category: 'cartoon', 
+    imageURL: "https://image.tmdb.org/t/p/original/ilFLHU1OxUS1YDvUMCr8K3hW28r.jpg",
+    title: "Wall-E's Earth",
+    description: "Follow Wall-E as he cleans up Earth and discovers the meaning of love.",
+    year: 2021,
+    duration: "98 min",
+    genre: ["Animation", "Family", "Sci-Fi"],
+    rating: 9.1,
+    director: "Andrew Stanton",
+    cast: ["Ben Burtt", "Elissa Knight", "Jeff Garlin"],
+    synopsis: "In a future where Earth is covered in garbage, a lonely robot continues his job of cleaning up the planet while dreaming of something more."
+  },
+  { 
+    id: 12, 
+    category: 'cartoon', 
+    imageURL: "https://image.tmdb.org/t/p/original/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
+    title: "Up: Adventure Awaits",
+    description: "Join Carl and Russell on their incredible balloon house adventure.",
+    year: 2022,
+    duration: "96 min",
+    genre: ["Animation", "Family", "Adventure"],
+    rating: 8.7,
+    director: "Pete Docter",
+    cast: ["Ed Asner", "Jordan Nagai", "Christopher Plummer"],
+    synopsis: "An elderly widower ties thousands of balloons to his house and flies to South America, accidentally taking a young Boy Scout on the adventure of a lifetime."
+  },
 
-export const movieImages = [
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/hBH50Mkcrc4m8x73CovLmY7vBx1.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/1vXTHTbSQJs9r2hp4Uk08XzKwPp.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/yk38mNoJpsswmk9o7i7eLhO4mc.jpg"
-    },
-    {
-        imageURL : "https://image.tmdb.org/t/p/original/562SAxZP1sLuYqDDTuODu3hdGyx.jpg"
-    },
-]
+  // 🎬 Movie Images
+  { 
+    id: 13, 
+    category: 'movie', 
+    imageURL: "https://image.tmdb.org/t/p/original/hBH50Mkcrc4m8x73CovLmY7vBx1.jpg",
+    title: "The Lion King: Pride Rock",
+    description: "Experience the circle of life in this epic tale of courage and family.",
+    year: 2023,
+    duration: "130 min",
+    genre: ["Animation", "Family", "Drama"],
+    rating: 8.9,
+    director: "Jon Favreau",
+    cast: ["Donald Glover", "Beyoncé", "James Earl Jones"],
+    synopsis: "Young lion prince Simba must overcome tragedy and betrayal to claim his rightful place as king of the Pride Lands in this stunning reimagining of the beloved classic."
+  },
+  { 
+    id: 14, 
+    category: 'movie', 
+    imageURL: "https://image.tmdb.org/t/p/original/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg",
+    title: "Beauty and the Beast",
+    description: "A tale as old as time about love, acceptance, and looking beyond appearances.",
+    year: 2023,
+    duration: "129 min",
+    genre: ["Romance", "Family", "Musical"],
+    rating: 8.4,
+    director: "Bill Condon",
+    cast: ["Emma Watson", "Dan Stevens", "Luke Evans"],
+    synopsis: "A young woman becomes prisoner to a beast in his castle, but as she gets to know him, she discovers the kind heart behind his monstrous exterior."
+  },
+  { 
+    id: 15, 
+    category: 'movie', 
+    imageURL: "https://image.tmdb.org/t/p/original/1vXTHTbSQJs9r2hp4Uk08XzKwPp.jpg",
+    title: "Aladdin's Magic Carpet",
+    description: "Soar through Agrabah on a magical adventure with Aladdin and Princess Jasmine.",
+    year: 2022,
+    duration: "128 min",
+    genre: ["Adventure", "Family", "Musical"],
+    rating: 8.2,
+    director: "Guy Ritchie",
+    cast: ["Mena Massoud", "Naomi Scott", "Will Smith"],
+    synopsis: "A street-smart young man discovers a magic lamp containing a genie who grants him three wishes, leading to an adventure of love, magic, and self-discovery."
+  },
+  { 
+    id: 16, 
+    category: 'movie', 
+    imageURL: "https://image.tmdb.org/t/p/original/yk38mNoJpsswmk9o7i7eLhO4mc.jpg",
+    title: "Moana: Ocean's Call",
+    description: "Join Moana as she sails across the Pacific to save her island home.",
+    year: 2023,
+    duration: "107 min",
+    genre: ["Animation", "Adventure", "Musical"],
+    rating: 8.6,
+    director: "Ron Clements",
+    cast: ["Auli'i Cravalho", "Dwayne Johnson", "Rachel House"],
+    synopsis: "A spirited teenager sails across the Pacific Ocean to save her island home, discovering her true calling with the help of demigod Maui."
+  },
+  { 
+    id: 17, 
+    category: 'movie', 
+    imageURL: "https://image.tmdb.org/t/p/original/562SAxZP1sLuYqDDTuODu3hdGyx.jpg",
+    title: "Encanto: Family Magic",
+    description: "Discover the magic within the Madrigal family and their enchanted home.",
+    year: 2022,
+    duration: "102 min",
+    genre: ["Animation", "Family", "Musical"],
+    rating: 8.5,
+    director: "Jared Bush",
+    cast: ["Stephanie Beatriz", "María Cecilia Botero", "John Leguizamo"],
+    synopsis: "In a magical house, every child has been blessed with a unique gift except one. When the family's magic is threatened, the ordinary girl may be their only hope."
+  },
 
-export const seriesImages = [
-    { imageURL : "https://image.tmdb.org/t/p/original/jntLBq0MLR3hrwKaTQswxACRPMs.jpg"},
-    { imageURL : "https://image.tmdb.org/t/p/original/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"},
-    { imageURL : "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg"},
-    { imageURL : "https://image.tmdb.org/t/p/original/yQGaui0bQ5Ai3KIFBB45nTeIqad.jpg"},
-    { imageURL : "https://image.tmdb.org/t/p/original/oAKzcqUCP3EK7rgAx9Jj8Futv8O.jpg"},
-]
+  // 📺 Series Images
+  { 
+    id: 18, 
+    category: 'series', 
+    imageURL: "https://image.tmdb.org/t/p/original/jntLBq0MLR3hrwKaTQswxACRPMs.jpg",
+    title: "The Mandalorian",
+    description: "Follow the adventures of a lone bounty hunter in the outer reaches of the galaxy.",
+    year: 2023,
+    duration: "45 min per episode",
+    genre: ["Sci-Fi", "Adventure", "Action"],
+    rating: 8.7,
+    director: "Jon Favreau",
+    cast: ["Pedro Pascal", "Gina Carano", "Carl Weathers"],
+    synopsis: "A lone gunfighter makes his way through the outer reaches of the galaxy, protecting a mysterious child while evading Imperial remnants.",
+    seasons: 3,
+    episodes: 24
+  },
+  { 
+    id: 19, 
+    category: 'series', 
+    imageURL: "https://image.tmdb.org/t/p/original/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+    title: "WandaVision",
+    description: "Wanda and Vision live idealized suburban lives until cracks in their reality start to appear.",
+    year: 2022,
+    duration: "40 min per episode",
+    genre: ["Superhero", "Drama", "Mystery"],
+    rating: 8.3,
+    director: "Matt Shakman",
+    cast: ["Elizabeth Olsen", "Paul Bettany", "Kathryn Hahn"],
+    synopsis: "Wanda Maximoff and Vision are living their ideal suburban life when they begin to suspect that everything is not as it seems.",
+    seasons: 1,
+    episodes: 9
+  },
+  { 
+    id: 20, 
+    category: 'series', 
+    imageURL: "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    title: "Loki",
+    description: "The God of Mischief finds himself in trouble with the Time Variance Authority.",
+    year: 2023,
+    duration: "50 min per episode",
+    genre: ["Superhero", "Sci-Fi", "Adventure"],
+    rating: 8.5,
+    director: "Kate Herron",
+    cast: ["Tom Hiddleston", "Owen Wilson", "Sophia Di Martino"],
+    synopsis: "After stealing the Tesseract, an alternate version of Loki is brought to the Time Variance Authority to help catch a dangerous variant of himself.",
+    seasons: 2,
+    episodes: 12
+  },
+  { 
+    id: 21, 
+    category: 'series', 
+    imageURL: "https://image.tmdb.org/t/p/original/yQGaui0bQ5Ai3KIFBB45nTeIqad.jpg",
+    title: "The Falcon and The Winter Soldier",
+    description: "Sam Wilson and Bucky Barnes team up for a global adventure.",
+    year: 2022,
+    duration: "50 min per episode",
+    genre: ["Superhero", "Action", "Drama"],
+    rating: 8.1,
+    director: "Kari Skogland",
+    cast: ["Anthony Mackie", "Sebastian Stan", "Wyatt Russell"],
+    synopsis: "Sam Wilson and Bucky Barnes team up for a global adventure that tests their abilities and their patience in this action-packed series.",
+    seasons: 1,
+    episodes: 6
+  },
+  { 
+    id: 22, 
+    category: 'series', 
+    imageURL: "https://image.tmdb.org/t/p/original/oAKzcqUCP3EK7rgAx9Jj8Futv8O.jpg",
+    title: "Hawkeye",
+    description: "Clint Barton must team up with Kate Bishop to confront enemies from his past.",
+    year: 2022,
+    duration: "45 min per episode",
+    genre: ["Superhero", "Action", "Comedy"],
+    rating: 8.0,
+    director: "Rhys Thomas",
+    cast: ["Jeremy Renner", "Hailee Steinfeld", "Vera Farmiga"],
+    synopsis: "Clint Barton must team up with young archer Kate Bishop to confront enemies from his past as Ronin in order to get back to his family for Christmas.",
+    seasons: 1,
+    episodes: 6
+  },
+];

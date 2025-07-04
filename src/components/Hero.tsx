@@ -7,14 +7,14 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "./ui/carousel"
-import { carouselImages } from "@/constant"
+import { allImages } from "@/constant"
 
 const Hero = () => {
     return (
         <div className="flex justify-center mt-5">
             <Carousel className="w-full max-w-5xl">
                 <CarouselContent className="w-full">
-                    {carouselImages.map((_, index) => (
+                    {allImages.filter(e => e.category == 'carousel').map((_, index) => (
                         <CarouselItem key={index}>
                             <div className="p-1">
                                 <Card className="w-full">
