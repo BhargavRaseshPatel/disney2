@@ -1,11 +1,44 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { allImages } from "@/constant";
 
+export interface ItemProps {
+  id: number;
+  title: string;
+  description: string;
+  imageURL: string;
+  year: number;
+  duration: string;
+  rating: number;
+  genre: string[];
+  director: string;
+  cast: string[];
+}
 const DetailPage = () => {
+
+  const [item, setItem] = useState<ItemProps>();
   const { id } = useParams<{ id: string }>();
   const imageId = parseInt(id || "", 10);
-  const item = allImages.find((img) => img.id === imageId);
+  // const item = allImages.find((img) => img.id === imageId);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      fetch('http://localhost:8080/movies/' + id)
+        .then(async (res) => {
+          if (!res.ok) {
+            const text = await res.text();
+            throw new Error(`Failed to fetch: ${text}`);
+          }
+          // console.log(res)
+          return res.json();
+        })
+        .then((data) => {
+          if (!data) throw new Error('No data received');
+          setItem(data);
+        })
+        .catch((error) => console.error('Error fetching movie:', error));
+    }
+    fetchData()
+  }, [imageId])
 
   if (!item) {
     return (
@@ -21,8 +54,8 @@ const DetailPage = () => {
         {/* Image Block */}
         <div>
           <img
-            src={item.imageURL}
-            alt={item.title}
+            src={item?.imageURL}
+            alt={item?.title}
             className="rounded-2xl w-full max-h-[750px] object-cover shadow-2xl border border-gray-700"
           />
         </div>
