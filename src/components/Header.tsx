@@ -54,7 +54,7 @@ const Header = () => {
 
                     <div className="bg-black my-1 border-white border-2 rounded-full hidden lg:flex flex-row justify-center w-[25%] relative">
                         <div className="flex items-center w-full">
-                            <input type="text" className="px-3 outline-none bg-transparent text-white w-full" onChange={(e) => searchByTitle(e.target.value)} />
+                            <input type="text" placeholder="Search here..." className="px-3 outline-none bg-transparent text-white w-full" onChange={(e) => searchByTitle(e.target.value)} />
                             <SearchIcon className="w-6 h-6 text-white mr-2" />
                         </div>
                         <div className="absolute bg-black top-12 z-10 w-full">
